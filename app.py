@@ -1,5 +1,4 @@
 
-
 # 파트 1: 기본 설정 및 백테스팅 함수
 import streamlit as st
 import pandas as pd
@@ -226,11 +225,9 @@ def backtest_fgi_strategy(df, buy_threshold, sell_threshold, initial_capital=10_
         "dates": dates,
         "trade_history": trade_history
     }
-```
 
 # 파트 2: 유전 알고리즘 관련 함수
 
-```python
 # 다중 목표 적합도 계산 함수
 def calculate_multi_fitness(individual, df, initial_capital, commission_rate, weights=None):
     """
@@ -503,11 +500,9 @@ def analyze_best_strategies(fitness_results, n=5):
     }
     
     return best_by
-```
 
 # 파트 3: 시각화, 유전 알고리즘 실행 및 메인 함수
 
-```python
 # Streamlit을 사용한 진행 상황 시각화
 def plot_ga_progress(best_fitness_history, avg_fitness_history, buy_thresh_history, sell_thresh_history, generation_count):
     """Streamlit을 사용하여 유전 알고리즘 진행 상황 시각화"""
