@@ -1,8 +1,6 @@
 
 
 # 파트 1: 기본 설정 및 백테스팅 함수
-
-```python
 import streamlit as st
 import pandas as pd
 import numpy as np
